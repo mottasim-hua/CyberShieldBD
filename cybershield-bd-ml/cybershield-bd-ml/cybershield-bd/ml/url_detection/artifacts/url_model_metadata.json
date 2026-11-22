@@ -1,0 +1,30 @@
+{
+  "selected_model": "XGBoost",
+  "feature_schema": [
+    "URLLength",
+    "DomainLength",
+    "IsDomainIP",
+    "TLDLength",
+    "NoOfSubDomain",
+    "NoOfLettersInURL",
+    "LetterRatioInURL",
+    "NoOfDegitsInURL",
+    "DegitRatioInURL",
+    "NoOfEqualsInURL",
+    "NoOfQMarkInURL",
+    "NoOfAmpersandInURL",
+    "NoOfOtherSpecialCharsInURL",
+    "SpacialCharRatioInURL",
+    "IsHTTPS",
+    "NoOfObfuscatedChar",
+    "ObfuscationRatio",
+    "HasObfuscation"
+  ],
+  "requires_scaling": false,
+  "label_meaning": {
+    "1": "Legitimate",
+    "0": "Phishing"
+  },
+  "evaluation_split": "domain-grouped (GroupShuffleSplit, test_size=0.2, random_state=42)",
+  "random_seed": 42
+}

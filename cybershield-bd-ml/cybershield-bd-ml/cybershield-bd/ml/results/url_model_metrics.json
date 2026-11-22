@@ -1,0 +1,109 @@
+{
+  "domain_grouped_split": {
+    "LogisticRegression": {
+      "accuracy": 0.9859324069308629,
+      "precision": 0.9844343624359116,
+      "recall": 0.9913085465958474,
+      "f1_score": 0.9878594958729688,
+      "confusion_matrix": [
+        [
+          19287,
+          422
+        ],
+        [
+          234,
+          26689
+        ]
+      ],
+      "training_time_seconds": 0.889
+    },
+    "RandomForest": {
+      "accuracy": 0.9952393206381883,
+      "precision": 0.9944812770843364,
+      "recall": 0.9972885636816106,
+      "f1_score": 0.9958829420273728,
+      "confusion_matrix": [
+        [
+          19560,
+          149
+        ],
+        [
+          73,
+          26850
+        ]
+      ],
+      "training_time_seconds": 21.343
+    },
+    "XGBoost": {
+      "accuracy": 0.9954323211528564,
+      "precision": 0.9943732879247797,
+      "recall": 0.9977342792407978,
+      "f1_score": 0.9960509483286056,
+      "confusion_matrix": [
+        [
+          19557,
+          152
+        ],
+        [
+          61,
+          26862
+        ]
+      ],
+      "training_time_seconds": 2.451
+    }
+  },
+  "standard_random_split_reference": {
+    "LogisticRegression": {
+      "accuracy": 0.9869567064621659,
+      "precision": 0.984984542911821,
+      "recall": 0.9923618835743419,
+      "f1_score": 0.988659451073104,
+      "confusion_matrix": [
+        [
+          19696,
+          408
+        ],
+        [
+          206,
+          26764
+        ]
+      ],
+      "training_time_seconds": 0.618
+    },
+    "RandomForest": {
+      "accuracy": 0.9951353188596678,
+      "precision": 0.9934674294150212,
+      "recall": 0.9980719317760475,
+      "f1_score": 0.9957643577175622,
+      "confusion_matrix": [
+        [
+          19927,
+          177
+        ],
+        [
+          52,
+          26918
+        ]
+      ],
+      "training_time_seconds": 18.84
+    },
+    "XGBoost": {
+      "accuracy": 0.9955176955431874,
+      "precision": 0.9936538390584069,
+      "recall": 0.9985539488320356,
+      "f1_score": 0.9960978676973721,
+      "confusion_matrix": [
+        [
+          19932,
+          172
+        ],
+        [
+          39,
+          26931
+        ]
+      ],
+      "training_time_seconds": 2.429
+    }
+  },
+  "selected_model": "XGBoost"
+}

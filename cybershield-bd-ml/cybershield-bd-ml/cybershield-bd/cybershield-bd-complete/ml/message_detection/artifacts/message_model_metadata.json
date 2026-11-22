@@ -1,0 +1,11 @@
+{
+  "selected_model": "LogisticRegression",
+  "label_meaning": {
+    "1": "spam/suspicious",
+    "0": "ham/safe"
+  },
+  "dataset": "UCI SMS Spam Collection (public, generic English SMS spam) via spam.csv",
+  "dataset_limitation": "This dataset is NOT Bangladesh-specific and does not represent bKash/Nagad/Rocket-style financial phishing. It is a general spam/ham corpus; 'spam' includes premium-rate/dating/prize spam, not exclusively financial fraud.",
+  "vectorizer": "TF-IDF, ngram_range=(1,2), max_features=4000, min_df=2, fit on train split only",
+  "random_seed": 42
+}

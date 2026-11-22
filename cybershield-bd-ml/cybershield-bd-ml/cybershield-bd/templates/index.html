@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b27">
+  <title>CyberShield BD | Phishing &amp; Scam Checks</title>
+  <link rel="stylesheet" href="/static/styles.css?v=20261002">
+</head>
+<body data-theme="dark">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <a class="brand" href="#dashboard" aria-label="CyberShield BD home">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>CyberShield <b>BD</b></span>
+      </a>
+      <p class="brand-tagline" data-i18n="tagline">AI-Powered Protection Against Phishing &amp; Scam Messages</p>
+
+      <nav class="primary-nav" aria-label="Main menu">
+        <button class="nav-link active" data-page="dashboard"><span class="nav-icon" aria-hidden="true">⌂</span><span data-i18n="dashboard">Dashboard</span></button>
+        <button class="nav-link" data-page="performance"><span class="nav-icon" aria-hidden="true">▥</span><span data-i18n="performance">Model Performance</span></button>
+        <button class="nav-link" data-page="about"><span class="nav-icon" aria-hidden="true">ⓘ</span><span data-i18n="about">How It Works</span></button>
+      </nav>
+
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" type="button" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false">☰</button>
+        <div class="topbar-title">
+          <p class="eyebrow">CYBERSHIELD BD</p>
+          <h1 id="pageTitle" data-i18n="dashboard">Dashboard</h1>
+          <p class="header-tagline" data-i18n="tagline">AI-Powered Protection Against Phishing &amp; Scam Messages</p>
+        </div>
+        <div class="header-actions">
+          <button class="control-button" id="languageToggle" type="button" aria-label="Switch language">বাংলা</button>
+          <button class="icon-button" id="themeToggle" type="button" aria-label="Switch color theme" title="Switch color theme"><span data-theme-icon aria-hidden="true">☼</span><span class="visually-hidden" data-i18n="lightMode">Light mode</span></button>
+        </div>
+      </header>
+
+      <section class="page active" id="dashboard" aria-labelledby="heroTitle">
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="hero-kicker" data-i18n="heroKicker">PRE-CLICK SECURITY CHECK</p>
+            <h2 id="heroTitle" data-i18n="heroTitle">Check Before You Trust</h2>
+            <p data-i18n="heroText">Analyze a suspicious link or message before entering passwords, OTPs, or financial information.</p>
+          </div>
+          <div class="hero-badge" aria-hidden="true"><span>CS</span></div>
+        </section>
+
+        <div class="analysis-grid">
+          <section class="scanner-card link-scanner" aria-labelledby="urlHeading">
+            <div class="scanner-heading">
+              <span class="scanner-icon link-icon" aria-hidden="true">↗</span>
+              <div><p class="section-kicker" data-i18n="linkType">LINK CHECK</p><h2 id="urlHeading" data-i18n="urlTitle">Check a Link</h2></div>
+            </div>
+            <p class="scanner-description" data-i18n="urlIntro">Paste a link to check for phishing-related URL patterns. CyberShield does not visit it.</p>
+            <form id="urlForm" novalidate>
+              <label for="urlInput" data-i18n="urlLabel">Link to check</label>
+              <input id="urlInput" name="url" type="url" inputmode="url" autocomplete="url" placeholder="https://example.com/login" data-i18n-placeholder="urlPlaceholder" aria-describedby="urlHint">
+              <p class="input-hint" id="urlHint" data-i18n="urlHint">The link is analyzed as text; it is not opened.</p>
+              <button class="primary-button" id="urlButton" type="submit"><span aria-hidden="true">⌕</span><span data-i18n="analyzeUrl">Analyze Link</span></button>
+            </form>
+            <div id="urlResult" class="result-area" aria-live="polite" aria-atomic="true"></div>
+          </section>
+
+          <section class="scanner-card message-scanner" aria-labelledby="messageHeading">
+            <div class="scanner-heading">
+              <span class="scanner-icon message-icon" aria-hidden="true">▤</span>
+              <div><p class="section-kicker" data-i18n="messageType">MESSAGE CHECK</p><h2 id="messageHeading" data-i18n="messageTitle">Check a Message</h2></div>
+            </div>
+            <p class="scanner-description" data-i18n="messageIntro">Review wording patterns that may be associated with spam or scam messages.</p>
+            <form id="messageForm" novalidate>
+              <label for="messageInput" data-i18n="messageLabel">Message to check</label>
+              <textarea id="messageInput" name="message" rows="5" placeholder="Paste a suspicious SMS or message here..." data-i18n-placeholder="messagePlaceholder" aria-describedby="messageHint"></textarea>
+              <p class="input-hint" id="messageHint" data-i18n="messageHint">The message model uses generic English SMS spam data.</p>
+              <button class="primary-button" id="messageButton" type="submit"><span aria-hidden="true">⌕</span><span data-i18n="analyzeMessage">Analyze Message</span></button>
+            </form>
+            <div id="messageResult" class="result-area" aria-live="polite" aria-atomic="true"></div>
+          </section>
+        </div>
+
+        <section class="trust-strip" aria-label="Privacy information">
+          <span class="trust-icon" aria-hidden="true">✓</span>
+          <div><h2 data-i18n="privacyTitle">Your input stays out of reports</h2><p data-i18n="privacyDetail">Analysis requests are processed by this app. Inputs are not saved by the application.</p></div>
+        </section>
+      </section>
+
+      <section class="page" id="performance" aria-labelledby="performanceTitle">
+        <div class="page-intro"><p class="section-kicker" data-i18n="researchResults">RESEARCH RESULTS</p><h2 id="performanceTitle" data-i18n="performance">Model Performance</h2><p data-i18n="performanceIntro">Evaluation results from the existing training pipeline.</p></div>
+        <div id="metricsContent" class="metrics-grid" aria-live="polite"><div class="loading-card" data-i18n="loadingMetrics">Loading model performance…</div></div>
+      </section>
+
+      <section class="page" id="about" aria-labelledby="aboutTitle">
+        <div class="page-intro"><p class="section-kicker" data-i18n="process">THE PROCESS</p><h2 id="aboutTitle" data-i18n="aboutTitle">How CyberShield BD Works</h2><p data-i18n="aboutIntro">A clear check before you interact with a link or message.</p></div>
+        <ol class="process-flow">
+          <li><span class="step-number">01</span><div><h3 data-i18n="stepInputTitle">Input</h3><p data-i18n="step1">Paste a link or message.</p></div></li>
+          <li><span class="step-number">02</span><div><h3 data-i18n="stepDetectionTitle">AI Detection</h3><p data-i18n="step2">AI checks suspicious patterns.</p></div></li>
+          <li><span class="step-number">03</span><div><h3 data-i18n="stepXaiTitle">Explainable AI</h3><p data-i18n="step3">CyberShield explains the decision.</p></div></li>
+          <li><span class="step-number">04</span><div><h3 data-i18n="stepWarningTitle">Security Warning</h3><p data-i18n="step4">Get a clear security recommendation.</p></div></li>
+        </ol>
+        <section class="limitation"><h3 data-i18n="limitationTitle">Model scope</h3><p data-i18n="limitationText">The URL model checks phishing-related URL patterns, not malware. The message model uses a generic English SMS spam dataset and was not specifically trained on Bangladeshi scam messages.</p></section>
+      </section>
+
+      <footer class="site-footer">
+        <div><strong>CyberShield BD</strong><p data-i18n="footerDescription">AI-assisted phishing and suspicious message detection</p></div>
+        <span class="academic-tag" data-i18n="academicProject">Academic Project</span>
+      </footer>
+    </main>
+  </div>
+  <script src="/static/app.js?v=20261002"></script>
+</body>
+</html>
